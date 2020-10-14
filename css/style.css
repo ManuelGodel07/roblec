@@ -18,7 +18,7 @@ body{
 }
 header{
 	width: 100%;
-	height: 30vh;
+	height: 25vh;
 }
 
 .head-box{
@@ -164,18 +164,20 @@ input.src:hover{
 /*------------------------------------------------------------------*/
 
 .conteiner {
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
 	width: 100%;
+	height: 70vh;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
 	align-items: center;
 	position: relative;
 }
 
 .titulo{
-	height: 10%;
+	height: 15%;
 	color:black;
 	font-weight: bold;
+	margin: 0;
 }
 .conteiner .contenedor-principal {
 	display: flex;
@@ -184,7 +186,7 @@ input.src:hover{
 	width: 100%;
 	align-items: center;
 	position: relative;
-	height: 90%;
+	height: 85%;
 }
 .conteiner .contenedor-principal .flecha-izquierda,
 .conteiner .contenedor-principal .flecha-derecha {
@@ -208,23 +210,27 @@ input.src:hover{
 /* ---- ----- ----- Carousel ----- ----- ----- */
 .conteiner .contenedor-carousel {
 	width: 100%;
+	height: 100%;
 	overflow: hidden;
 	scroll-behavior: smooth;
 	display: flex;
 	flex-flow: row wrap;
+
 }
 
 .conteiner .contenedor-carousel .carousel {
 	display: flex;
 	flex-wrap: nowrap;
-	align-items: stretch;
+	align-items: center;
+
 }
 
 .conteiner .contenedor-carousel .carousel .pic {
-	min-width: 20%;
-	align-items: stretch;
+	min-width: 30%;
+	height: 100%;
+	align-items: center;
 	transition: .3s ease all;
-	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+	border: rgba(0, 0, 0, 0.459) solid 2px;
 }
 
 .conteiner .contenedor-carousel .carousel .pic:hover {
