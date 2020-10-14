@@ -28,7 +28,7 @@ header{
 	flex-flow: row wrap;
 	justify-content: space-around;
 	align-items: center;
-	background: url(images/6385.jpg) center / 100% 100% no-repeat;
+	background: url("images/6385.jpg") center / 100% 100% no-repeat;
 
 }
 .logo{
@@ -56,7 +56,7 @@ input.src:hover{
 .element{
 	font-size: 1em;
 	height: 25%;
-	background: url(images/muro.jpg) center / 100% 100% no-repeat;
+	background: url("/images/muro.jpg") center / 100% 100% no-repeat;
 
 }
 
