@@ -1,0 +1,619 @@
+*{
+	scroll-behavior: smooth;
+}
+body{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	text-align: justify;
+	align-items: center;
+	align-content: space-evenly;
+	font-size: 16px;
+	font-family: monospace;
+	background-image: linear-gradient( rgb(201, 200, 200),white 40%);
+	/*background: url() position / size repeat attachment origin clip*/
+}
+header{
+	width: 100%;
+	height: 30vh;
+}
+
+.head-box{
+	height: 75%;
+	padding: 0px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	background: url(/images/6385.jpg) center / 100% 100% no-repeat;
+
+}
+.logo{
+	width: 100px;
+	height: 100px;
+}
+input.src{
+	outline: none;
+	font-size: 1.5em;
+	border-radius: 25px;
+	color: #444;
+	border: 3px solid rgb(114, 113, 113);
+	width: 60px;
+	transition: all .5s;
+}
+
+input.src:hover{
+	width: 180px;
+	background-color: #fff;
+	border: #1020b3;
+	box-shadow: 0 0 5px #6dcff680;
+}
+
+
+.element{
+	font-size: 1em;
+	height: 25%;
+	background: url(/images/muro.jpg) center / 100% 100% no-repeat;
+
+}
+
+
+.menu{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	line-height: normal;
+	margin:0;
+	padding: 0;
+}	
+.menu .menu-link{
+	font-family: sans-serif;
+	font-size: 1.2em;
+	color: rgb(185, 184, 184);
+	text-decoration: none;
+	padding: .5em 1em;
+	display: block;
+ 
+}
+.menu-link:hover{
+	color: white;
+}
+.menu .menu-item{
+	text-decoration: none;
+	list-style: none;
+	position: relative;
+	text-align: center;
+}
+
+.menu-item:hover .submenu{
+   display: block;
+}
+.submenu{
+	display: block;
+	position: absolute;
+	display: none;
+	z-index: 2;
+	list-style: none;
+	padding: 0;
+	background: rgb(7, 29, 104);
+}
+
+.panel{
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    bottom: 0;
+	right: 0;
+	left: 0;
+    background-color: rgba(68, 126, 180, 0.534);
+    width: 25%;
+    transition: transform .3s ease;
+    transform: translate(-100%,0%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.panel.is-active{
+    transform: translate(0,0);
+}
+
+
+
+.panel-btn{
+    position: fixed;
+    z-index: 999;
+	bottom: 1vw;
+	left: 1vw;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    padding: 0;
+	display: flex;
+	justify-content: center;
+}
+.men{
+    width: inherit;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-content: center;
+	text-align: center;
+}
+.men a{
+    padding: 2em;
+    width: inherit;
+    display: block;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.men a:hover{
+    font-weight: bold;
+    color: black;
+}
+
+
+
+/*------------------------------------------------------------------*/
+
+.conteiner {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+	position: relative;
+}
+
+.titulo{
+	height: 10%;
+	color:black;
+	font-weight: bold;
+}
+.conteiner .contenedor-principal {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	position: relative;
+	height: 90%;
+}
+.conteiner .contenedor-principal .flecha-izquierda,
+.conteiner .contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	height: 20%;
+	line-height: 40px;
+	width: 4%;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.conteiner .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+
+.conteiner .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.conteiner .contenedor-carousel {
+	width: 100%;
+	overflow: hidden;
+	scroll-behavior: smooth;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.conteiner .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: stretch;
+}
+
+.conteiner .contenedor-carousel .carousel .pic {
+	min-width: 20%;
+	align-items: stretch;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.conteiner .contenedor-carousel .carousel .pic:hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.conteiner .contenedor-principal .flecha-izquierda:hover,
+.conteiner .contenedor-principal .flecha-derecha:hover {
+	height: 25%;
+	width: 5%;
+}
+
+.conteiner .contenedor-carousel .carousel .pic img {
+	width: 100%;
+	height: 100%;
+	vertical-align: center;
+}
+.art{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: start;
+	align-items: center;
+	margin:0;
+	padding:15px;
+	height: 80vh;
+}
+.text{
+	height: 25%;
+	width: 70%;
+}
+.video{
+	width: 100%;
+	height: 75%;
+}
+.vid{
+	width: 100%;
+	height: 100%;
+}
+
+.intel{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	text-decoration: none;	
+	padding: 10px;
+	height: 50vh;
+	align-items: center;
+}
+.geo, .act, .know, .ad{
+	border: 3px solid black;
+	align-items: stretch;
+}
+.geo img, .act img, .know img, .ad img{
+	width: 100%;
+	height: 100%;
+}
+.brother{
+	width: 20%;
+	height: 90%;
+	border-radius: 15px;
+}
+
+.brother:hover {
+	transform: scale(0.9);
+	transform-origin: center;
+	transition: 0.5s ease-out;
+}
+.contact{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	align-content: space-around;
+	padding: 0;
+	height: 70vh;
+	width: 90%;
+}
+.contact-table1{
+	height: 100%;
+	width: 40%;
+	border: 3px solid black;
+	padding: 5%;
+	border-radius: 25px;
+	text-align: left;
+	line-height: 1rem;
+	white-space: pre-line;
+
+}
+.contact-table2{
+	height: 100%;
+	width: 40%;
+
+	border: 3px solid black;
+	padding: 5%;
+	border-radius:25px;
+	text-align: left;
+	line-height: 1rem;
+	white-space: pre-line;
+
+}
+
+
+.farewell{
+	border:3px solid black;		
+	color: whitesmoke;
+	display: flex;
+	flex-flow: row wrap;
+	height: auto;
+	justify-content: space-around;
+	background: linear-gradient( 45deg,rgb(9, 46, 146) 50%, rgb(234, 184, 27 ) 50%);
+
+}
+.final-botton1{
+	height: 20%;
+	text-decoration: none;
+}
+.final-botton2{
+	height: 80%;
+	background: linear-gradient(45deg, rgb(7, 29, 104),black,rgb(7, 29, 104),rgb(7, 29, 104),black,rgb(7, 29, 104));
+	text-align: center;
+	line-height: 2rem;
+	text-align-last: center;
+	scroll-behavior: smooth;
+}
+
+
+
+/*---- ----- ----- Media Queries ----- ----- -----*/
+/***********************************************************************************************/
+
+@media screen and (max-width: 75em) {
+	header{
+		height: 20em;
+	}
+	.logo{
+		width: 9em;
+		height: 9em;
+	}
+	.head-box{
+		height: 50%;
+	}
+	.element{
+		height: 50%;
+		font-size: 2em;
+	}
+	.men a{
+		padding: 1em;
+		font-size: 2em;
+	}
+}
+
+
+
+/***********************************************************************************************/
+@media screen and (max-width: 64em) {
+	header{
+		height: 24em;
+		font-size: 0.7em;
+	}
+	.tex{
+		font-size: 1.3em;
+	}
+	.conteiner .contenedor-principal {
+		align-items: center;
+		height: 12em;
+	}
+	.conteiner .contenedor-carousel{
+		height: inherit;
+	}
+	.contened{
+		height: 30em;
+		width: 80%;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.contact-table1{
+		padding: 1em;
+		font-size: 1.2em;
+	}
+	.contact-table1 p , .contact-table1 .h4{
+		border: 0;
+		margin: 0;
+	}
+	.men a{
+		padding: 1em;
+		font-size: 1.3em;
+	}
+}
+/***********************************************************************************************/
+
+@media screen and (max-width: 48em) {
+	header{
+		height: 20em;
+	}
+	.logo{
+		width: 8em;
+		height: 8em;
+	}
+	.element{
+		font-size: 2em;
+	}
+	.menu-link{
+		font-size: 2em;
+	}
+	.submenu{
+		position: absolute;
+	}
+	.conteiner .contenedor-principal {
+		align-items: center;
+		height: 9em;
+	}
+	.conteiner .contenedor-carousel{
+		height: inherit;
+	}
+	.text{
+		height: 30%;
+		width: 70%;
+	}
+	.tex{
+		font-size: 1.3em;
+	}
+	.video{
+		width: 100%;
+		height: 70%;
+	}
+	.contact, .contact-table{
+		padding: 0;
+	}
+	.intel{
+		height: 13em;
+	}
+	.tables .Marcas .brother-1{
+		width: 6em;
+		height: 6em;
+		margin: 8px;
+	}
+	.contact-table{
+		font-size: 1em;
+	}
+	.tables h4{
+		font-size: 3em;
+	}
+	.tables p{
+		font-size: 1.5em;
+	}
+
+	.contact .contact-table h1{
+		font-size: 2em;
+	}
+	input[type=text]{
+		width: 9em;
+	}
+	input[type=email]{
+		width: 9em;
+	}
+	input[type=password]{
+		width: 9em;
+	}
+	.final-botton2{
+		font-size: .8em;
+	}
+	.panel{
+		position: fixed;
+	}
+	.men a{
+		padding: 1em;
+		font-size: 1em;
+	}
+}
+/***********************************************************************************************/
+@media screen and (max-width: 37.5em) {
+	.head-box .logo{
+		width: 7em;
+		height: 7em;
+	}
+	header{
+		height: 15em;
+	}
+	.element{
+		font-size: 1.5em;
+	}
+
+
+	.conteiner .contenedor-principal {
+		align-items: center;
+		height: 9em;
+	}
+	.conteiner .contenedor-carousel{
+		height: inherit;
+	}
+	.contened .text1{
+		font-size: 1.3em;
+	}
+	.intel{
+		height: 17em;
+	}
+	.brother {
+		width: 40%;
+		height: 40%;
+		border-radius: 15px;
+	}
+	.contact-table1{
+		font-size:1em;
+	}
+	input[type=text]{
+		width: 7em;
+	}
+	input[type=email]{
+		width: 7em;
+	}
+	input[type=password]{
+		width: 7em;
+	}
+	.men a{
+		padding: .5em;
+		font-size: .8em;
+	}
+}
+/***********************************************************************************************/
+@media screen and (max-width: 30em) {
+	header{
+		height: 14em;
+	}
+	.head-box{
+		height: 60%;
+	}
+	.head-box .logo{
+		width: 6em;
+		height: 7em;
+	}
+	.element{
+		height: 40%;
+		font-size: 1em;
+	}
+
+	.conteiner .contenedor-principal {
+		align-items: center;
+		height: 4em;
+	}
+	.conteiner .contenedor-carousel{
+		height: inherit;
+	}
+	.conteiner .contenedor-principal .flecha-izquierda,
+	.conteiner .contenedor-principal .flecha-derecha {
+		height: 40%;
+		width: 10%;
+	}
+	.conteiner .contenedor-principal .flecha-izquierda:hover,
+	.conteiner .contenedor-principal .flecha-derecha:hover {
+		height: 50%;
+		width: 10%;
+	}
+
+	.contened .text1{
+		font-size: 2em;
+	}
+	.tex{
+		font-size: .6em;
+	}
+	.text-c{
+		font-size: .6em;
+	}
+	.contact{
+		font-size: .5em;
+	}
+	.contact .h4{
+		font-size: 1.4em;
+	}
+	.contact .contact-table2 h5{
+		font-size: 1.4em;
+	}
+	input[type=text]{
+		width: 7em;
+		height: 2em;
+	}
+	input[type=email]{
+		width: 7em;
+		height: 2em;
+	}
+	input[type=password]{
+		width: 8em;
+		height: 2em;
+	}
+	.men a{
+		padding: 3em;
+		font-size: .5em;
+	}
+}

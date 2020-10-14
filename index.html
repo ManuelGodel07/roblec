@@ -1,11 +1,173 @@
 <!DOCTYPE html>
 <html lang="es-MEX">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Chrome-1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0 maximum-scale=1.0 minimum-scale=1.0 shrink-to-fit=no">
+    <meta description= "Tienda digital de muebles">
+    <meta name="keywords" content="Muebles sobre diseño">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="favicon/man.ico">
     <title>Roblec</title>
 </head>
 <body>
-    <h1>Hola mundo</h1>
+    <header>
+        <section class="head-box">
+            <div><img class="logo" src="images/universidad.png" alt="UNAM"></div>
+            <div><input type="text" name="search" placeholder="Busqueda" id="#" class="src" autocomplete="off"></div>
+            <div><img src="images\man.png" class="logo" alt="MR"></div>
+        </section>
+
+        <nav class="element">
+            <ul class="menu .align-content-center">
+                <li><a class="menu-link" href="#">¿Quienes Somos?</a></li>
+                <li><a class="menu-link" href="#">Proyectos realizados</a></li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#">Areas de interes</a>
+                        <ul class="submenu">
+                            <li><a class="menu-link" href="#">Laboratorio</a></li>
+                            <li><a class="menu-link" href="#">Matematicas</a></li>
+                            <li><a class="menu-link" href="#">Psicologia</a></li>
+                            <li><a class="menu-link" href="#">Programación</a></li>
+                        </ul>
+                    </li>
+                <li><a class="menu-link" href="#">Usuarios</a></li>
+                <li><a target="_blank" class="menu-link" href="https://api.whatsapp.com/send?phone=525540145714&text=Hola%20Manuel,%20me%20pareci%C3%B3%20asombrosa%20tu%20paguina">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <button class=" panel-btn hamburger hamburger--vortex" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    <aside class="panel">
+        <nav class="men">
+            <a href="HTML/CVManuelRuiz.pdf">Curriculum Vitae</a>
+            <a href="HTML/proyectos.html">Proyectos concluidos</a>
+            <a href="https://api.whatsapp.com/send?phone=525540145714&text=Hola%20Manuel,%20me%20pareci%C3%B3%20asombrosa%20tu%20paguina">Contacto</a>
+            <a href="http://multicommexicana.com/">Multicom</a>
+            <a href="#">Agradecimientos</a>
+        </nav>
+    </aside>
+
+
+    <!---------------------------------------------------------------------------------------->
+    <div class="conteiner">
+        <h3 class="titulo">Muebles por habitación</h3>
+        <div class="contenedor-principal">
+            <button role="button" id="flecha-izquierda"  class="flecha-izquierda carousel-control-prev-icon" aria-hidden="true"><!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>--></button>
+            <div class="contenedor-carousel">
+                <div class="carousel">
+                    <div class="pic">
+                        <a href="#"><img src="/images/OE7GDA0.jpg" alt="Dormitorio"></a>
+                    </div>
+                    <div class="pic">
+                        <a href="#"><img src="/images/6537.jpg" alt="Balcón"></a>
+                    </div>
+                    <div class="pic">
+                        <a href="#"><img src="/images/3844.jpg" alt="Baño"></a>
+                    </div>
+                    <div class="pic">
+                        <a href="#"><img src="/images/10412.jpg" alt="Comedor"></a>
+                    </div>
+                    <div class="pic">
+                        <a href="#"><img src="/images/499.jpg" alt="Sala de estar"></a>
+                    </div>
+                    <div class="pic">
+                        <a href="#"><img src="/images/17997227.jpg" alt="Garage"></a>
+                    </div>
+                    <div class="pic">
+                        <a href="#"><img src="/images/8217.jpg" alt="Cocina"></a>
+                    </div>
+                    <div class="pic">
+                        <a href="#"><img src="/images/sot.jpg" alt="Sotano"></a>
+                    </div>
+                    <div class="pic">
+                        <a href="#"><img src="/images/atic.jpg" alt="Estudio"></a>
+                    </div>
+                    <div class="pic">
+                        <a href="#"><img src="/images/jar.jpg" alt="Jardin"></a>
+                    </div>
+                    <div class="pic">
+                        <a href="#"><img src="/images/pasi.jpg" alt="Pasillo"></a>
+                    </div>
+                    <div class="pic">
+                        <a href="#"><img src="/images/ext.jpg" alt="Exterior"></a>
+                    </div>
+                </div>
+            </div>
+            <button role="button" id="flecha-derecha" class="flecha-derecha carousel-control-next-icon"><!----<span class="carousel-control-next-icon" aria-hidden="true"></span>--></button>
+        </div>
+    </div>
+<!---------------------------------------------------------------------------------------->
+    <div class="art">
+        <div class= "text">
+            <article class="tex">Un matematico que no es en algún sentido un poeta nunca será un matematico completo.</article>
+            <cite class="tex-c">Karl Weierstrass</cite>
+        </div>
+        <div class="video">
+            <title>Multimedia</title>
+            <iframe class="vid" src="https://www.youtube.com/embed/2LaiBsm4DVI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+    </div>
+    <div class="intel">
+        <div class="brother geo"><a href="HTML\geolocalizacion.html"><img src="https://image.flaticon.com/icons/svg/3159/3159280.svg" class="img-fluid" alt="Geolocalización"></a></div>
+        <div class="brother act"><a href="HTML/covid.html"><img src="https://image.flaticon.com/icons/svg/3063/3063198.svg" class="img-fluid" alt="Covid"></a></div>
+        <div class="brother know"><a href="HTML/index12.html"><img src="https://image.flaticon.com/icons/svg/3081/3081720.svg" class="img-fluid" alt="Conocimiento"></a></div>
+        <div class="brother ad"><a href="publicidad.html"><img src="https://image.flaticon.com/icons/svg/3065/3065012.svg" class="img-fluid" alt="Publicidad"></a></div>
+    </div>
+
+    <div class="contact">
+
+        <form name="formulario_contacto" method="POST" class="contact-table1" action="send_mail.php">
+            <h2>Contacto</h2>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre">
+            <label for="nombre">Correo: </label>
+            <input type="email" name="email" id="email">
+            <label for="nombre">Asunto: </label>
+            <input type="text" name="asunto" id="asunto">
+            <label for="nombre">Telefono: </label>
+            <input type="text" name="telefono" id="Telefono">
+            <label for="nombre">Comentarios: </label>
+            <textarea name="comentarios" id="comentarios"></textarea>
+            <button>Enviar</button>
+            </label>
+
+            <a href="mailto:manuel_ruiz@ciencias.unam.mx" class="yellow" title="Enviar correo a manuel">Da click para tener contacto Inmediato via Correo</a>
+        </form>
+
+
+        <div class="contact-table2">
+            <h5>Usuarios</h5>
+                <label>
+                    <tr><td>Ingrese su usuario: <input type="text" placeholder="Correo" required></td></tr>
+                    <tr><td>Ingrese su contraseña:<input type="password" name="password" required></td></tr>
+                    <button>Enviar</button>
+                </label>						
+        </div>
+    </div>
+    <div class="farewell">
+        <div class="final-botton1">
+            <aside><a href="#">Inicio de página</a></aside>
+        </div>
+        <div class="final-botton2">
+            <footer>
+                <article>Hecho en México, todos los derechos reservados.Esta página se ha hecho con fines educativos y sin fines de lucro. Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica. De otra forma, requiere permiso previo por el autor.</article>
+                <cite>Manuel Ruiz</cite> 
+            </footer>
+        </div>
+    </div>
+    <script src="js/index_dom.js" type="module"></script>
+    <script src="js/hamburguesa.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="js/script2.js"></script>
+    
 </body>
 </html>
