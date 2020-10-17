@@ -56,7 +56,9 @@ input.src:hover{
 .element{
 	font-size: 1em;
 	height: 25%;
-	background: url("/images/muro.png") center / 100% 100% no-repeat;
+	background-image: linear-gradient(70deg, rgb(10, 125, 240), rgb(2,190,196) 40%);
+
+/**	background: url("/images/muro.jpg") center / 100% 100% no-repeat;**/
 
 }
 
